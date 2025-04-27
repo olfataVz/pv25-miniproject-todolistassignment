@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>To-Do List [F1D022057-Lalu Olfata Vedora Zurji]</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Background utama */
+QWidget {
+    background-color: #333333; /* Hitam sedikit cerah */
+    font-family: 'Segoe UI';
+    font-size: 11pt;
+}
+
+/* Label */
+QLabel {
+    color: white; /* Warna teks putih */
+}
+
+/* Group Box atau List Area */
+QGroupBox {
+    background-color: #444444; /* Hitam sedikit cerah */
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #555555; /* Hitam sedikit cerah */
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+/* Tombol */
+QPushButton {
+    background-color: #0077b6;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: #005f8f;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="labelTitle">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>30</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>TO-DO LIST ASSIGNMENT</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxAssignment">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Time</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Today</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 Weeks</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 Month</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="labelAssignment">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>70</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>List Assignment</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCompleted">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>310</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Completed</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxCompleted">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Completed</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="applyButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>530</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="editButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>530</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Edit Assignment</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>461</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayoutCompleted">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayoutCompleted">
+      <item>
+       <widget class="QLabel" name="labelCompleted_2">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>461</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayoutAssignment">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayoutAssignment">
+      <item>
+       <widget class="QCheckBox" name="checkBox">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>Tugas Pengolahan Data - Deadline 17 April, 23.59</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
